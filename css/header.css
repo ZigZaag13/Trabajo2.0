@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.menu {
+    position: relative;
+    background: #181818;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+    height: 5.90rem;
+    padding: 14px 20px 18px 20px;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu__logo {
+    height: 4rem;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #242F9B;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 40px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu:checked~.navbar {
+    display: initial;
+}
+
+.menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #181818;
+    display: none;
+}
+
+.menu label {
+    display: initial;
+}
+
+.usuario--php {
+    border: 1px solid black;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 14px 10px 10px 10px;
+        height: 3.90rem;
+    }
+    .menu__logo {
+        height: 3rem;
+        padding: 0px 0px 10px 0px;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+}
